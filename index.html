@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Am Chicker Popcorn</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍗 Am Chicker Popcorn</div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#order">Tempahan</a>
+    <a href="#waktu">Waktu Operasi</a>
+    <a href="tel:01123456789">📞 Hubungi Kami</a>
+    <a href="https://wa.me/601123456789" target="_blank">💬 WhatsApp</a>
+    <a href="https://maps.google.com/?q=Bayan+Baru+Penang" target="_blank">📍 Lokasi</a>
+    <a href="admin.php" target="_blank">🔐 Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Rasa Popcorn Ayam Terbaik!</h1>
+    <p>Penghantaran sekitar Bayan Baru</p>
+    <a href="#menu" class="btn">Lihat Menu</a>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <h2>Menu Kami</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="img/img2.jpeg" alt="Chicken Popcorn">
+      <h3>Chicken Popcorn</h3>
+      <p>RM6.00</p>
+    </div>
+    <div class="menu-item">
+      <img src="img/img1.jpeg" alt="Ayam Goreng">
+      <h3>Ayam Goreng</h3>
+      <p>RM7.00</p>
+    </div>
+    <div class="menu-item">
+      <img src="img/img3.jpeg" alt="Fries">
+      <h3>Kentang Goreng</h3>
+      <p>RM4.00</p>
+    </div>
+    <div class="menu-item">
+      <img src="img/img4.jpeg" alt="Air Gas">
+      <h3>Air Gas</h3>
+      <p>RM2.00</p>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <h2>Tempahan</h2>
+  <form action="data.php" method="POST">
+    <input type="text" name="nama" placeholder="Nama Penuh" required />
+    <input type="tel" name="telefon" placeholder="Nombor Telefon" required />
+    <select name="menu" required>
+      <option value="">Pilih Menu</option>
+      <option>Chicken Popcorn</option>
+      <option>Ayam Goreng</option>
+      <option>Kentang Goreng</option>
+      <option>Air Gas</option>
+    </select>
+    <input type="number" name="kuantiti" placeholder="Kuantiti" min="1" required />
+    <button type="submit" class="btn">Hantar Tempahan</button>
+  </form>
+</section>
+
+<section id="waktu" class="order-section">
+  <h2>Waktu Operasi</h2>
+  <p><strong>Isnin - Jumaat:</strong> 10:00 pagi - 10:00 malam</p>
+  <p><strong>Sabtu - Ahad:</strong> 12:00 tengah hari - 11:00 malam</p>
+</section>
+
+<footer>
+  <p>© 2025 Am Chicker Popcorn | Bayan Baru</p>
+</footer>
+
+</body>
+</html>
